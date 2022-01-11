@@ -1,0 +1,142 @@
+<%= form_with(model: event) do |form| %>
+  <% if event.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+        <% event.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :long_name, style: "display: block" %>
+    <%= form.text_field :long_name %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :venue, style: "display: block" %>
+    <%= form.text_field :venue %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :city, style: "display: block" %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :province, style: "display: block" %>
+    <%= form.text_field :province %>
+  </div>
+
+  <div>
+    <%= form.label :country, style: "display: block" %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div>
+    <%= form.label :event_url, style: "display: block" %>
+    <%= form.text_field :event_url %>
+  </div>
+
+  <div>
+    <%= form.label :start_date, style: "display: block" %>
+    <%= form.datetime_field :start_date %>
+  </div>
+
+  <div>
+    <%= form.label :end_date, style: "display: block" %>
+    <%= form.datetime_field :end_date %>
+  </div>
+
+  <div>
+    <%= form.label :all_day, style: "display: block" %>
+    <%= form.check_box :all_day %>
+  </div>
+
+  <div>
+    <%= form.label :publish_on, style: "display: block" %>
+    <%= form.datetime_field :publish_on %>
+  </div>
+
+  <div>
+    <%= form.label :unpublish, style: "display: block" %>
+    <%= form.datetime_field :unpublish %>
+  </div>
+
+  <div>
+    <%= form.label :logo, style: "display: block" %>
+    <%= form.file_field :logo, multiple: false %>
+  </div>
+
+  <div>
+    <%= form.label :imaeges, style: "display: block" %>
+    <%= form.file_field :images, multiple: true %>
+
+
+  <div>
+    <%= form.label :files, style: "display: block" %>
+    <%= form.file_field :files, multiple: true %>
+  </div>
+
+  <div>
+    <%= form.label :submission_faq, style: "display: block" %>
+    <%= form.text_field :submission_faq %>
+  </div>
+
+  <div>
+    <%= form.label :submission_due_date, style: "display: block" %>
+    <%= form.datetime_field :submission_due_date %>
+  </div>
+
+  <div>
+    <%= form.label :speaker_notified_dat, style: "display: block" %>
+    <%= form.datetime_field :speaker_notified_dat %>
+  </div>
+
+  <div>
+    <%= form.label :published, style: "display: block" %>
+    <%= form.check_box :published %>
+  </div>
+
+  <div>
+    <%= form.label :feature, style: "display: block" %>
+    <%= form.check_box :feature %>
+  </div>
+
+  <div>
+    <%= form.label :internal, style: "display: block" %>
+    <%= form.check_box :internal %>
+  </div>
+
+  <div>
+    <%= form.label :speaker_id, style: "display: block" %>
+    <%= form.text_field :speaker_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

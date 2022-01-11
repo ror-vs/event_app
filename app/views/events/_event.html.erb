@@ -1,0 +1,138 @@
+<div id="<%= dom_id event %>">
+  <p>
+    <strong>Name:</strong>
+    <%= event.name %>
+  </p>
+
+  <p>
+    <strong>Long name:</strong>
+    <%= event.long_name %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= event.year %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= event.description %>
+  </p>
+
+  <p>
+    <strong>Venue:</strong>
+    <%= event.venue %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= event.address %>
+  </p>
+
+  <p>
+    <strong>City:</strong>
+    <%= event.city %>
+  </p>
+
+  <p>
+    <strong>Province:</strong>
+    <%= event.province %>
+  </p>
+
+  <p>
+    <strong>Country:</strong>
+    <%= event.country %>
+  </p>
+
+  <p>
+    <strong>Event url:</strong>
+    <%= event.event_url %>
+  </p>
+
+  <p>
+    <strong>Start date:</strong>
+    <%= event.start_date %>
+  </p>
+
+  <p>
+    <strong>End date:</strong>
+    <%= event.end_date %>
+  </p>
+
+  <p>
+    <strong>All day:</strong>
+    <%= event.all_day %>
+  </p>
+
+  <p>
+    <strong>Publish on:</strong>
+    <%= event.publish_on %>
+  </p>
+
+  <p>
+    <strong>Unpublish:</strong>
+    <%= event.unpublish %>
+  </p>
+
+  <p>
+    <strong>Logo:</strong>
+
+    <%= image_tag url_for(event.logo), height: '100px', width: '100px' if event.logo.present? %>
+  </p>
+  <br>
+  <p>
+    <strong>Images:</strong>
+    <% event.images.each do |photo| %>
+
+      <%= image_tag url_for(photo), height: '100px', width: '100px' %>
+    <% end %>
+  </p>
+  <br>
+  <p>
+    <strong>Files:</strong>
+    <% event.files.each do |photo| %>
+
+      <%= image_tag url_for(photo), height: '100px', width: '100px' %>
+    <% end %>
+  </p>
+
+  <p>
+    <strong>Logo:</strong>
+    <%#= image_tag url_for(event.images), height: '100px',width: '100px' %>
+  </p>
+  <p>
+    <strong>Submission faq:</strong>
+    <%= event.submission_faq %>
+  </p>
+
+  <p>
+    <strong>Submission due date:</strong>
+    <%= event.submission_due_date %>
+  </p>
+
+  <p>
+    <strong>Speaker notified dat:</strong>
+    <%= event.speaker_notified_dat %>
+  </p>
+
+  <p>
+    <strong>Published:</strong>
+    <%= event.published %>
+  </p>
+
+  <p>
+    <strong>Feature:</strong>
+    <%= event.feature %>
+  </p>
+
+  <p>
+    <strong>Internal:</strong>
+    <%= event.internal %>
+  </p>
+
+  <p>
+    <strong>Speaker:</strong>
+    <%= event.speaker_id %>
+  </p>
+
+</div>

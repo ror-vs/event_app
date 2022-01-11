@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  long_name: MyString
+  year: 1
+  description: MyText
+  venue: MyString
+  address: MyString
+  city: MyString
+  province: MyString
+  country: MyString
+  event_url: MyString
+  start_date: 2022-01-11 16:26:50
+  end_date: 2022-01-11 16:26:50
+  all_day: false
+  publish_on: 2022-01-11 16:26:50
+  unpublish: 2022-01-11 16:26:50
+  submission_faq: MyString
+  submission_due_date: 2022-01-11 16:26:50
+  speaker_notified_dat: 2022-01-11 16:26:50
+  published: false
+  feature: false
+  internal: false
+  speaker: one
+
+two:
+  name: MyString
+  long_name: MyString
+  year: 1
+  description: MyText
+  venue: MyString
+  address: MyString
+  city: MyString
+  province: MyString
+  country: MyString
+  event_url: MyString
+  start_date: 2022-01-11 16:26:50
+  end_date: 2022-01-11 16:26:50
+  all_day: false
+  publish_on: 2022-01-11 16:26:50
+  unpublish: 2022-01-11 16:26:50
+  submission_faq: MyString
+  submission_due_date: 2022-01-11 16:26:50
+  speaker_notified_dat: 2022-01-11 16:26:50
+  published: false
+  feature: false
+  internal: false
+  speaker: two
