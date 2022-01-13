@@ -103,4 +103,4 @@ Test case run with this command
 ```shell
 rspec
 ```
-# event_app
+
